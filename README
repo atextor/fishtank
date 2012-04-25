@@ -1,0 +1,34 @@
+fishtank Version 1 - OpenGL fish swarm simulation
+
+Introduction
+==============================================================================
+Fishtank is a graphical simulation of a fish swarm in a fish tank, and
+"sharks" that eat fish. There are several interactive controls:
+ * Switch between the different cameras
+ * Change the brightness of a glowing fish
+ * Add and remove fish and sharks
+ * Switch the ceiling lamp and the names of the fish on and off
+ * Automatically calculate the number of fish where the frames per
+   second drop below 10
+ * Export 20 TGA-files per second (quasi video export)
+The project was created during the summer semester 2007 in computer graphics
+using C++, OpenGL and GLUT.
+
+
+Compilation and usage
+==============================================================================
+To build, type make.
+To run, type ./fishtank.
+Press H to display the online help.
+
+Code
+==============================================================================
+If you wonder whats the deal with the strange #defines (like
+#define rotation new Rotation) - these defines make it possible to model
+a scene graph like VRML right in the C++-code without C++-syntax clutter.
+See Main.cpp for a sample (where the Table is modeled).
+
+Author
+==============================================================================
+Andreas Textor <textor.andreas@googlemail.com>
+
